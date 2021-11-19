@@ -1,0 +1,1 @@
+This is a Blog created for my CS197 class.
