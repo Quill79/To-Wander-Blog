@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Bray</title>
+        <title>Contact</title>
         <link href="css\index.css" rel="stylesheet">
+        <link href="css\contact.css" rel="stylesheet">
         <meta charset="utf-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,16 +22,15 @@
             </ul>
         </header>
         <main>
-            <section class="top grid-container">
-                <div class="picture">
-                    <img src="resources\new-orleans-park(smaller).jpg" class="main-image alt="sunset on beach" />
-                </div>
-                <div class="filler"></div>
-                <div class="intro">
-                    <h2 class="heading"><span class="emphasis-blue">Explore</span> with me!</h2>
-                    <p class="desc">Please stay ahwile and explore some of what my site has to offer.</p>
-                </div>    
-            </section>
+            <div class="contact-box">
+                <form>
+                    <input type="text" class="input-field" placeholder="Your Name">
+                    <input type="text" class="input-field" placeholder="Your Email">
+                    <input type="text" class="input-field" placeholder="Subject">
+                    <textarea type="text" class="input-field textarea-field" placeholder="Your Message"></textarea>
+                    <button type="button" class="button btn">Send Message</button>   
+                </form>
+            </div>
         </main>
     </body>
 </html>
