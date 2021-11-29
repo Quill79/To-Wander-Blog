@@ -1,0 +1,94 @@
+.gridbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px;
+    grid-template-areas: 
+        "sidebar atlanta atlanta atlanta"
+        "sidebar neworleans neworleans neworleans"
+        "sidebar st-louis st-louis st-louis";
+    gap: 2rem;
+    margin: 5%;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #D7D7D9;
+    border-radius: 50px;
+    padding: 40px;
+    text-align: center;
+    border: 3px dotted #8C311C;
+}
+
+.sidebar h2 {
+    color: #003049;
+    font-family: "Unica One", Cursive;
+}
+
+hr.list-break {
+    border: 7px solid #8C311C;
+    border-radius: 5px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+.trip-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-link {
+    text-decoration: none;
+}
+
+.div-link:visited {
+    color: rgb(198, 216, 226);
+}
+
+.div-link:hover {
+    transition: all 1s;
+    color: #003049;
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .5);
+    color: rgb(198, 216, 226);
+    border-radius: 10px;
+    width: 75%;
+}
+
+.desc h2,
+p {
+    padding: 2px;
+}
+.atlanta {
+    grid-area: atlanta;
+    border-radius: 30px;
+    background-image: url("/resources/atlanta-view.jpg");
+    background-position: center;
+    
+}
+
+.new-orleans {
+    grid-area: neworleans;
+    border-radius: 30px;
+    background-image: url("/resources/new-orleans-riverfront.jpg");
+    background-position: bottom;
+}
+
+.st-louis {
+    grid-area: st-louis;
+    border-radius: 30px;
+    background-image: url("/resources/st-louis.jpg");
+    background-position: center;
+}

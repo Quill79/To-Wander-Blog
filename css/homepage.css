@@ -1,0 +1,83 @@
+@media screen and (max-width: 600px) {
+    .grid-container {
+        flex-wrap: wrap;
+    }
+    .middle {
+        flex-wrap: wrap;
+    }
+}
+.grid-container {
+    display: flex;
+    max-width: 90%;
+    margin: 50px auto;
+    justify-content: space-around;
+}
+
+.main-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.intro {
+    display: flex;
+    max-width: 80%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3em;
+
+}
+
+.heading {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.emphasis-blue {
+    font-size: 1.8rem;
+    color: #387499;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px auto;
+    align-items: center;
+}
+
+#bio {
+    max-width: 30%;
+    
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding-bottom: 40px;
+}
+
+.travel-thumbnail {
+    max-width: 80%;
+    height: auto;
+}
+
+.bottom {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.been {
+    background-color: #adc178;
+    width: 25px;
+    height: 25px;
+}
+
+.planned {
+    background-color: #495867;
+    width: 25px;
+    height: 25px;
+}
