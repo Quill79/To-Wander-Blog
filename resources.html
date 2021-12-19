@@ -3,7 +3,7 @@
     <head>
         <title>Resources</title>
         <link href="css/index.css" rel="stylesheet">
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content= "width=device-width, initial-scale=1.0">
         
         <!-- Fonts -->
         <script src="https://kit.fontawesome.com/e73987644b.js" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
     </head>
     <body>
         <header class="navbar">
-            <h1>To Wander</h1>
+            <h1>To Wonder</h1>
             <ul class="nav-links">
                 <li class="nav-item"><a href="index.html">Home</a></li>
                 <li class="nav-item"><a href="blog.html">Blog</a></li>
@@ -23,8 +23,23 @@
                 <li class="nav-item"><a href="resources.html">Resources</a></li>
                 <li class="nav-item"><a href="contact.html">Contact</a></li>
             </ul>
+
+            <!-- Hamburger menu for smaller viewports -->
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-bars"></i></button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="destinations.html">Destinations</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
         </header>
-        <footer class="footer">
+        <!-- Empty div to space content from navbar-->
+        <div class="navbar-spacer"></div>
+        <footer>
             <div class="inner-footer">
                 <div class="social-links">
                     <ul>

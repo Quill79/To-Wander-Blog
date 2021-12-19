@@ -7,7 +7,7 @@
 
 .contact-box {
     width: 95%;
- background-image: url("/resources/postcard.png");
+    background-image: url("/resources/postcard.png");
     border-radius: 30px;
     width: 960px;
     height: 611px;
@@ -25,6 +25,9 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .postcard-text {
+        display: none;
     }
 }
 

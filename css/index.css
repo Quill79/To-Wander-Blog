@@ -10,19 +10,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
+    padding: 0;
+    height: 100px;
     border-bottom: 10px groove #5B89A6;
     background-color: #A6411C;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
-@media screen and (max-width: 600px) {
-    .nav-links {
-        flex-wrap: wrap;
-        text-align: right;
-    }
-    .nav-links > li {
-        flex-basis: 50%;
-    }
+.navbar-spacer {
+    height: 100px;
 }
 
 h1 {
@@ -35,7 +33,6 @@ h1 {
     display: inline-flex;
     font-size: 20px;
     font-weight: 400;
-
 }
 
 .nav-item {
@@ -58,10 +55,59 @@ h1 {
 
 }
 
+.dropbtn {
+    background-color: #A6411C;
+    color: #5B89A6;
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hamburger Menu small viewports */
+
+.dropdown {
+    position: relative;
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    right: 0;
+    z-index: 2;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #c4bfbf;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #c4bfbf;
+}
+
+
+/* Beginning of footer styling */
+
 .inner-footer {
     margin: 0;
     padding: 0;
     background-color: #8C311C;
+    width: 100%;
 }
 
 .social-links {
@@ -130,4 +176,15 @@ h1 {
     background-color: #A6411C;
 }
 
-
+/* Style Rules for Mobile Viewport */
+@media only screen and (max-width: 600px) {
+    .nav-links {
+        display: none
+    }
+    .dropdown {
+        display: inline-block;
+    }
+    .quick-links {
+        display: none;
+    }
+}
