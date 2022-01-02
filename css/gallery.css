@@ -1,11 +1,27 @@
-.gallery {
+.pictures {
     line-height:0;
     column-count:5;
     column-gap:5px;
     margin: 50px auto;
  }
 
- .gallery img {
+ h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Crimson Text", Serif;
+    font-weight: bold;
+    margin: 3%;
+}
+
+cite {
+    font-size: 1.3rem;
+}
+
+.emphasis-blue {
+    color: #387499;
+}
+
+ .pictures img {
      width: 100% !important;
      height: auto !important;
      margin-bottom: 5px;
@@ -13,12 +29,24 @@
      transition: filter 2s;
  }
 
- .gallery img:hover {
+ .pictures img:hover {
      filter: none;
      z-index: 1;
  }
+
+ .video {
+    display: flex;
+    justify-content: center;
+ }
+
+ .video video {
+    width: 100%;
+    margin: 50px 50px;
+ }
+
+ 
  @media only screen and (max-width: 600px) {
-    .gallery {
+    .pictures {
      column-count: 2;
     }
  }

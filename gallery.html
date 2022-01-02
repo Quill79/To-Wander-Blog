@@ -41,7 +41,11 @@
         <!-- Empty div to space content from navbar-->
         <div class="navbar-spacer"></div>
         <main>
-            <div class="gallery">
+            <div class="gallery-quote">
+                <h2>“To my mind, the greatest reward and luxury of travel is to be able to experience everyday things as if for the first time, to be in a position in which almost nothing is so familiar it is taken for granted.”
+                <br><cite class="emphasis-blue">- Bill Bryson</cite></h2>
+            </div>
+            <div class="pictures">
                 <img src="resources\Georgia\art.jpg">
                 <img src="resources\Georgia\new-orleans-bridge.jpg">
                 <img src="resources\Georgia\new-orleans-art.jpg">
@@ -71,9 +75,22 @@
                 <img src="resources\Georgia\in-car.jpg">
                 <img src="resources\Georgia\jess-sunrise.jpg">        
             </div>
+
+            <div class="video">
+                <video src="resources\georgiaMovie.mp4" poster="resources\video-cover.jpg" controls>
+                    <div class="hover">
+                        <p class="title">Georgia 2019</p>
+                    </div>
+                </video>
+            </div>
         </main>
         <footer>
             <div class="inner-footer">
+                <h3>Would you like to sign up for our monthly newsletter?</h3>
+                <div class="newsletter">
+                    <input type="email" id="email" name="email" placeholder="Enter your email: ">
+                    <button>Subscribe</button>
+                </div>
                 <div class="social-links">
                     <ul>
                         <li class="social-items"><a href="#"><i class="fab fa-facebook fa-lg"></i></a></li>
@@ -81,20 +98,11 @@
                         <li class="social-items"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
                     </ul>
                 </div>
-                <div class="quick-links">
-                    <ul>
-                        <li class="quick-items"><a href="index.html">Home</a></li>
-                        <li class="quick-items"><a href="blog.html">Blog</a></li>
-                        <li class="quick-items"><a href="gallery.html">Gallery</a></li>
-                        <li class="quick-items"><a href="destinations.html">Destinations</a></li>
-                        <li class="quick-items"><a href="resources.html">Resources</a></li>
-                        <li class="quick-items"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+            </div>
                 <div class="outer-footer">
                     Copyright &copy; To Wander Blog. All Rights Reserved
                 </div>
-            </div>
+            
         </footer>
     </body>
 </html>
